@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+   
+}
+#back{
+    width: 100%;
+    height: 100%;
+
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+}
+#workingarea{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    position: relative;
+}
+
+#nav{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 ;
+}
+
+#nav img{
+    
+    height:70px ;
+}
+#nleft,#nright{
+    display : flex;
+    align-items: center;
+    gap: 40px;
+
+}
+#nav a {
+    pointer-events:all ;
+    color: aliceblue;
+    font-weight:800 ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#heroleft{
+    min-width: 50%;
+    
+}
+#heroleft .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+#heroleft .elem h1:nth-child(1){
+    top:0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top:100%;
+    left:0;
+    line-height: .9;
+    font-family:"kajiro" ;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+#heroleft button {
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+
+#heroright{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 25%;
+    color: white;
+    
+}
+
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    margin-bottom: 50px;
+}
